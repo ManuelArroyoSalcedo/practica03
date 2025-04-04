@@ -40,6 +40,33 @@
         profe01.dpto = "Empresa";
         console.log(profe01.dameDatos());
 
+        //Utilizamos ES6 para implementar la herencia en JavaScript
+        class Humano{
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this.edad = edad;
+            };
+            saludar(){
+                console.log("Hola, soy un Humano.");
+            };
+            dameDatos(){
+                return this.nombre + ":" + this.edad;
+            };
+        };
+
+        class Alumno extends Humano{
+            constructor(nombre, edad, grupo){
+                super(nombre, edad);
+                this.grupo = grupo;
+            };
+            dameDatos(){
+                return super.dameDatos() + ":" + this.grupo;
+            };    
+        };
+        
+        const pablo = new Alumno ("Pablo Montes", 18, "1DAM");
+        console.log(pablo.dameDatos());
+
     </script>
 </body>
 </html>
