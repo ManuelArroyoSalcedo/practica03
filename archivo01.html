@@ -7,5 +7,34 @@
 </head>
 <body>
     
+
+    <script>
+        const Persona = {
+            nombre: null,
+            edad: null,
+            saludar: function(){
+                console.log("Saludos, soy un objeto Persona.");
+            },
+            dameDatos: function(){
+                return this.nombre + ":" + this.edad;
+            }
+        };
+
+        Persona.saludar();
+        Persona.nombre = "Juan";
+        Persona.edad = 25;
+        console.log(Persona.dameDatos());
+        
+        //Implementación de la herencia
+        const Profesor = Object.create(Persona);
+        Profesor.dpto = "Informática";
+        Profesor.dameDatos = function(){
+            return this.nombre + ":" + this.edad + ":" + this.dpto;
+        };
+        console.log(Profesor.dameDatos());
+
+
+
+    </script>
 </body>
 </html>
