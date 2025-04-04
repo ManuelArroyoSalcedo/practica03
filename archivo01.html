@@ -33,7 +33,12 @@
         };
         console.log(Profesor.dameDatos());
 
-
+        //Implementamos otra vez la herencia y la sobrecarga de métodos
+        const profe01 = Object.create(Profesor);
+        profe01.nombre = "Ana";
+        profe01.edad = 35;
+        profe01.dpto = "Empresa";
+        console.log(profe01.dameDatos());
 
     </script>
 </body>
