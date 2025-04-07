@@ -9,4 +9,5 @@ Existe diferentes formas de crear objetos en JavaScritp:
 ## Implementación de la herencia en JavaScript
 La herencia se puede implementar en JavaScritp de diferentes formas. Podemos destacar la que utiliza la **sintaxis ES6 (class)** y la que se hace con **Object.create**.
 
-
+El resultado de la ejecución del código del archivo *archivo01.html* es el siguiente:   
+![Resultado](ConsolaJS.jpg)
