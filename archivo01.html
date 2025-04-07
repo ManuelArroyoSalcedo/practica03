@@ -73,7 +73,22 @@
         const ana = new Alumno ("Ana", 23, "2DAW");
         console.log(ana.dameDatos());
 
+        //Solamente se puede implementar la herencia en Es6 (class) cuando el padre se ha declarado también con class.
+        /**
+         * El siguiente código da error.
+        class Personal extends Persona{
+            constructor(nombre, edad, cargo){
+                super(nombre, edad);
+                this.cargo = cargo;
+            }
+            dameDatos(){
+                return super.dameDatos() + ":" + this.cargo;
+            };             
+        };
 
+        const lali = new Personal("Laura", 45, "Conserje");
+        console.log(lali.dameDatos());
+        */
 
     </script>
 </body>
