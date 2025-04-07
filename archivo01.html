@@ -90,6 +90,17 @@
         console.log(lali.dameDatos());
         */
 
+        //Creación de objeto sin prototipo
+        const pasillo = Object.create(null);
+        pasillo.edificio = "A";
+        pasillo.planta = 0;
+        console.log(Object.getPrototypeOf(pasillo)); 
+
+        pasillo.dameDatos = function(){
+            return this.edificio + ":" + this.planta;
+        };
+
+        console.log(pasillo.dameDatos());
     </script>
 </body>
 </html>
