@@ -95,6 +95,12 @@
         pasillo.edificio = "A";
         pasillo.planta = 0;
         console.log(Object.getPrototypeOf(pasillo)); 
+
+        pasillo.dameDatos = function(){
+            return this.edificio + ":" + this.planta;
+        };
+
+        console.log(pasillo.dameDatos());
     </script>
 </body>
 </html>
